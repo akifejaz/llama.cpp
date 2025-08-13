@@ -8,6 +8,10 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      - name: Install libatomic1
+        run: |
+          sudo apt-get update || true   
+          sudo apt-get install -y libatomic1
       - uses: actions/checkout@v4
       - name: Setup Riscv
         run: |
