@@ -4,7 +4,7 @@ on:
   workflow_call:
 
 jobs:
-  bianbu-2.2-riscv64-native:
+  bianbu-riscv64-native: # Bianbu 2.2
     runs-on: self-hosted
 
     steps:
